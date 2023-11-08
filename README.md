@@ -49,4 +49,10 @@ Flaws:
 
 ### FLAW 5: Security Logging and Monitoring Failures
 
-- **Exact Source Link:** [Flaw 5 Source](https://github.com/Joel6677/cyber-security-project-1/blob/67f
+- **Exact Source Link:** [Flaw 5 Source](https://github.com/Joel6677/cyber-security-project-1/blob/67f58a29b6de9523219f5de1b359408a541fdab6/poll_project/settings.py#L117)
+- **Description of Flaw 5:** Logging and monitoring is critical in order to help detect, escalate, and respond to active breaches.
+The absence of a logging and monitoring system in the application could lead the significant security concerns since it hinders the application’s capability to monitor crucial security events. This could lead to undetected security incidents and vulnerabilities.
+- **How to Fix Flaw 4:** In my project this flaw could be addressed by using the Django’s built-in logging system. 
+- **Link to Fix for Flaw 5:**
+   - [Fix 1](https://github.com/Joel6677/cyber-security-project-1/blob/67f58a29b6de9523219f5de1b359408a541fdab6/poll_project/settings.py#L117)
+   - [Fix 2](https://github.com/Joel6677/cyber-security-project-1/blob/67f58a29b6de9523219f5de1b359408a541fdab6/poll/views.py#L9)
