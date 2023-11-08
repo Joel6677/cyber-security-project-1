@@ -1,4 +1,6 @@
-LINK: https://github.com/Joel6677/cybersecurity-project-1
+# CYBER SECURITY BASE PROJECT 1
+
+LINK TO THE REPOSITORY: https://github.com/Joel6677/cybersecurity-project-1
 
 How to set up the application:
 
