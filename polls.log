@@ -1,0 +1,19 @@
+INFO 2023-11-05 16:32:46,802 views New poll created by user admin
+INFO 2023-11-05 16:32:46,818 views User accessed the 'home' view
+INFO 2023-11-05 16:33:00,450 views User accessed the 'delete_poll' view
+INFO 2023-11-05 16:33:00,463 views Poll 40 deleted by user admin
+INFO 2023-11-05 16:33:00,474 views User accessed the 'home' view
+INFO 2023-11-05 17:54:20,390 views User accessed the 'home' view
+INFO 2023-11-05 17:54:26,302 views New poll created by user admin
+INFO 2023-11-05 17:54:26,310 views User accessed the 'home' view
+INFO 2023-11-05 17:54:27,878 views User accessed the 'delete_poll' view
+INFO 2023-11-05 17:54:27,884 views Poll 41 deleted by user admin
+INFO 2023-11-05 17:54:27,888 views User accessed the 'home' view
+INFO 2023-11-05 17:55:17,052 views User accessed the 'home' view
+INFO 2023-11-06 22:16:11,961 views User accessed the 'home' view
+INFO 2023-11-06 22:16:18,193 views User accessed the 'home' view
+INFO 2023-11-06 22:16:45,031 views New poll created by user admin
+INFO 2023-11-06 22:16:45,037 views User accessed the 'home' view
+INFO 2023-11-06 22:17:42,968 views User accessed the 'delete_poll' view
+INFO 2023-11-06 22:17:42,978 views Poll 36 deleted by user admin
+INFO 2023-11-06 22:17:42,985 views User accessed the 'home' view

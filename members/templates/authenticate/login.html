@@ -1,0 +1,42 @@
+{% extends "poll/base.html" %}
+{% load widget_tweaks %}
+
+{% block title %}Create Poll{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Login</h3>
+            </div>
+
+            <form method="POST">
+                {% csrf_token %}
+                <div class="panel-body">
+                
+                <div class="control-group">
+                    <label class="control-label" for="inputUsername">Username</label>
+                    <div class="controls">
+                      <input type="text" id="inputUsername" name="username" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputPassword" name="password" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                  <hr/>
+                    <div class="controls">
+                      <button type="submit" class="btn btn-info">Sign in</button>
+                    </div>
+                  </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
