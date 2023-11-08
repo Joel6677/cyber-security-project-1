@@ -15,9 +15,7 @@ Flaws:
 ### FLAW 1: Broken Access Control
 
 - **Exact Source Link:** [Flaw 1 Source](https://github.com/Joel6677/cyber-security-project-1/blob/67f58a29b6de9523219f5de1b359408a541fdab6/poll/views.py#L78)
-- **Description of Flaw 1:** Users must not have the ability to exceed their designated permissions. Failures in access control could result in potential vulnerabilities, including unauthorized data disclosure, alteration, data loss, or the execution of business functions beyond the user’s authorized scope.
-
-Currently there are no proper authorization checks for deleting polls. Users can delete other user’s polls by first creating a poll, inspecting the delete button and then manipulating the form action to target a specific poll for deletion.
+- **Description of Flaw 1:** Users must not have the ability to exceed their designated permissions. Failures in access control could result in potential vulnerabilities, including unauthorized data disclosure, alteration, data loss, or the execution of business functions beyond the user’s authorized scope. Currently there are no proper authorization checks for deleting polls. Users can delete other user’s polls by first creating a poll, inspecting the delete button and then manipulating the form action to target a specific poll for deletion.
 
 - **How to Fix Flaw 1:** This flaw can be fixed by modifying the `views.py` file's `delete_poll` method. Firstly, we need to enable Django’s built-in login system to ensure user authentication. Next, the check whether the current user is the same as the creator of the poll must be added.
 - **Links to Fixes for Flaw 1:**
