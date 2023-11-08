@@ -6,8 +6,8 @@ from django.db import connections, connection, transaction
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
 
-import logging
-logger = logging.getLogger('polls')
+# import logging
+# logger = logging.getLogger('polls')
 
 
 def home(request):
@@ -17,7 +17,7 @@ def home(request):
         'polls' : polls
     }
 
-    logger.info("User accessed the 'home' view")
+    # logger.info("User accessed the 'home' view")
 
     return render(request, 'poll/home.html', context)
 
@@ -31,7 +31,7 @@ def create(request):
             new_poll.creator = request.user
             new_poll.save()
 
-            logger.info(f"New poll created by user {request.user.username}")
+            # logger.info(f"New poll created by user {request.user.username}")
 
             return redirect('home')
     else:
@@ -61,11 +61,11 @@ def vote(request, poll_id):
         elif selected_option == 'option3':
             poll.option_three_count += 1
         else:
-            logger.error("Invalid form option received in 'vote' view")
+            # logger.error("Invalid form option received in 'vote' view")
             return HttpResponse(400, 'Invalid form option')
         poll.save()
 
-        logger.info(f"User {request.user.username} voted in poll {poll_id}")
+        # logger.info(f"User {request.user.username} voted in poll {poll_id}")
 
         return redirect('results', poll.id)
         
@@ -79,7 +79,7 @@ def delete_poll(request, poll_id):
     # Get the poll to be deleted
     poll = Poll.objects.get(pk=poll_id)
 
-    logger.info("User accessed the 'delete_poll' view")
+    # logger.info("User accessed the 'delete_poll' view")
 
     # if request.user != poll.creator:
     #     raise PermissionDenied("You are not the owner of this poll and cannot delete it.")
@@ -89,7 +89,7 @@ def delete_poll(request, poll_id):
         # If the request is a POST request, delete the poll
         poll.delete()
 
-        logger.info(f"Poll {poll_id} deleted by user {request.user.username}")
+        # logger.info(f"Poll {poll_id} deleted by user {request.user.username}")
 
         return redirect('home')  # Redirect to the home page or another appropriate page after deletion
 

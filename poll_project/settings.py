@@ -109,39 +109,39 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 AUTHENTICATION_BACKENDS = [
-   'axes.backends.AxesBackend', # Axes must be first
+   'axes.backends.AxesBackend',
    'django.contrib.auth.backends.ModelBackend',
 ]
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': '{levelname} {asctime} {module} {message}',
-            'style': '{',
-        },
-        'simple': {
-            'format': '{levelname} {message}',
-            'style': '{',
-        },
-    },
-    'handlers': {
-        'polls': {
-            'level': 'INFO',  # You can adjust the log level as needed (INFO, DEBUG, ERROR, etc.).
-            'class': 'logging.FileHandler',
-            'filename': 'polls.log',  # Specify the log file name and path.
-            'formatter': 'verbose',
-        },
-    },
-    'loggers': {
-        'polls': {
-            'handlers': ['polls'],
-            'level': 'INFO',  # You can adjust the log level as needed.
-            'propagate': False,
-        },
-    },
-}
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'verbose': {
+#             'format': '{levelname} {asctime} {module} {message}',
+#             'style': '{',
+#         },
+#         'simple': {
+#             'format': '{levelname} {message}',
+#             'style': '{',
+#         },
+#     },
+#     'handlers': {
+#         'polls': {
+#             'level': 'INFO',  
+#             'class': 'logging.FileHandler',
+#             'filename': 'polls.log',  
+#             'formatter': 'verbose',
+#         },
+#     },
+#     'loggers': {
+#         'polls': {
+#             'handlers': ['polls'],
+#             'level': 'INFO',  
+#             'propagate': False,
+#         },
+#     },
+# }
 
 
 # Internationalization
