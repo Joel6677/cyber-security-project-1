@@ -148,7 +148,6 @@ AUTHENTICATION_BACKENDS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-## Test
 
 LANGUAGE_CODE = 'en-us'
 
