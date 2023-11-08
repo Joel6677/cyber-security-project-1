@@ -28,6 +28,7 @@ SECRET_KEY = 'django-insecure-18bmskys_@(*wikr2-qo(0)z_m_(z%obzd$3mkt5csstpof3vf
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+#DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -165,7 +166,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AXES_ENABLED = True
+AXES_ENABLED = False
+# AXES_ENABLED = True
 AXES_FAILURE_LIMIT = 6 
 AXES_RESET_ON_SUCCESS = True
 AXES_COOLOFF_TIME = 0.1 
