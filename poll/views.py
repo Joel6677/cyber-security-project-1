@@ -8,7 +8,7 @@ from django.core.exceptions import PermissionDenied
 
 # import logging
 # logger = logging.getLogger('polls')
-
+# The Django's logging system is commented out. To enable it, remove the comments for logger.
 
 def home(request):
     polls = Poll.objects.all()
@@ -73,6 +73,7 @@ def vote(request, poll_id):
         'poll' : poll
     }
     return render(request, 'poll/vote.html', context)
+
 #broken access control
 #@login_required
 def delete_poll(request, poll_id):
@@ -86,14 +87,13 @@ def delete_poll(request, poll_id):
 
     print(request.method)
     if request.method == 'POST':
-        # If the request is a POST request, delete the poll
+        
         poll.delete()
 
         # logger.info(f"Poll {poll_id} deleted by user {request.user.username}")
 
-        return redirect('home')  # Redirect to the home page or another appropriate page after deletion
+        return redirect('home')  
 
-    # If the request is not a POST request, render the confirmation page
     return render(request, 'poll/delete.html', {'poll': poll})
 
 
