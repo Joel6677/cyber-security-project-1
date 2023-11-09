@@ -18,7 +18,8 @@ How to set up the application:
    - `password1: cybersecurity1`
    - `username2: jack`
    - `password2: cybersecurity2`
-Flaws:
+
+## Flaws:
 
 ### FLAW 1: Broken Access Control
 
