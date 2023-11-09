@@ -1,5 +1,7 @@
 # CYBER SECURITY BASE PROJECT 1
 
+This is a basic poll application, where users can create,vote and examine polls. 
+
 LINK TO THE REPOSITORY: https://github.com/Joel6677/cybersecurity-project-1
 
 How to set up the application:
