@@ -13,7 +13,11 @@ How to set up the application:
 2. To fix the flaws you might need to run the following:
    - `pip install django-axes`
    - `pip install python-decouple`
-
+3. To login:
+   - `username1: bob`
+   - `password1: cybersecurity1`
+   - `username2: jack`
+   - `password2: cybersecurity2`
 Flaws:
 
 ### FLAW 1: Broken Access Control
